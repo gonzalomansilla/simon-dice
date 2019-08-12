@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="./src/img/icon/logo-tab.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Blinker:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simon Dice</title>
+  </head>
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Simon Dice</title>
-</head>
+  <body sip-shortcut-listen="true">
+    <div class="animate-bg">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
 
-<body sip-shortcut-listen="true">
+    <div class="gameboard">
+      <p class="gameboard__nivelJr">Nivel actual: 1</p>
 
-  <div class="gameboard">
-    <div id="celeste" class="color celeste left" data-color="celeste"></div>
-    <div id="violeta" class="color violeta right" data-color="violeta"></div>
-    <div id="naranja" class="color naranja left" data-color="naranja"></div>
-    <div id="verde" class="color verde right" data-color="verde"></div>
-    <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
-  </div>
+      <main class="gameboard__simon">
+        <div class="gameboard__simon-base"></div>
+        <div class="simon__colores">
+          <div id="azul" class="color azul" data-color="azul">
+            <img src="./src/img/Colors/Blue/Normal.svg" alt="Boton color" />
+            <img
+              class="hide"
+              src="./src/img/Colors/Blue/Pressed.svg"
+              alt="Boton color presionado"
+            />
+          </div>
+          <div id="rojo" class="color rojo" data-color="rojo">
+            <img src="./src/img/Colors/Red/Normal.svg" alt="Boton color" />
+            <img
+              class="hide"
+              src="./src/img/Colors/Red/Pressed.svg"
+              alt="Boton color presionado"
+            />
+          </div>
+          <div id="amarillo" class="color amarillo" data-color="amarillo">
+            <img src="./src/img/Colors/Yellow/Normal.svg" alt="Boton color" />
+            <img
+              class="hide"
+              src="./src/img/Colors/Yellow/Pressed.svg"
+              alt="Boton color presionado"
+            />
+          </div>
+          <div id="verde" class="color verde" data-color="verde">
+            <img src="./src/img/Colors/Green/Normal.svg" alt="Boton color" />
+            <img
+              class="hide"
+              src="./src/img/Colors/Green/Pressed.svg"
+              alt="Boton color presionado"
+            />
+          </div>
+        </div>
+        <div id="btnEmpezar" class="btn-start off"></div>
+      </main>
+    </div>
 
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="js/index.js"></script>
-
-</body>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="src/js/index.js"></script>
+  </body>
 </html>
