@@ -35,7 +35,7 @@ class Color {
 
 class Juego {
     constructor() {
-        this.nivelMax = 3
+        this.nivelMax = 10
         this.nivelActual = 1
         this.resultadoPartidaJr = 0
         this.colores = new Array(
@@ -121,7 +121,7 @@ class Juego {
         }
 
         if (this.nivelActual <= this.nivelMax) {
-            nivelJr.textContent = `Nivel actual: ${this.nivelActual}`
+            nivelJr.textContent = `Nivel actual - ${this.nivelActual}`
         }
     }
 

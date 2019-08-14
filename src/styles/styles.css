@@ -15,6 +15,7 @@ body {
 
 .gameboard {
   width: 100vw;
+  height: inherit;
   display: grid;
   grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr;
