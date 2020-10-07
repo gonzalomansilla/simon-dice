@@ -10,7 +10,7 @@ A finalizar el curso se obtuvo el juego que se muestra debajo. El mismo fue desa
 
 ## Objetivos personales
 
-_Se plantearon objetivos concretos para mejorar el diseño del juego y su funcionalidad_
+Se plantearon objetivos concretos para mejorar el diseño del juego y su funcionalidad
 
 - Mejorar el diseño haciéndolo más realista
 - Agregar sonidos
